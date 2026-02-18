@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora - Ultra Pro App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e0ff;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00e0ff, #ff00c8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #00e0ff, #ff00c8);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+        }
+
+        footer {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Nexora Logo" style="width:120px; display:block; margin:0 auto 10px auto;">
+    <h1>Nexora - Thought Blog</h1>
+    <p>Write Your Thoughts, Love Stories, Poetry & Daily Life</p>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Welcome to Nexora Ultra Pro App</h1>
+        <p>A 100% Real Modern Website with Ultra-Pro Upgrades, Animations, Responsive Design and Professional UI using your custom logo.</p>
+        <button class="btn">Get Started</button>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Ultra-Pro Features</h2>
+    <br>
+    <div class="features">
+        <div class="card">
+            <h3>⚡ Fast Performance</h3>
+            <p>Optimized for speed and smooth user experience.</p>
+        </div>
+        <div class="card">
+            <h3>📱 Fully Responsive</h3>
+            <p>Works perfectly on Mobile, Tablet and Desktop.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Modern UI Design</h3>
+            <p>Professional glassmorphism and gradient style UI.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Real App Structure</h3>
+            <p>Ready structure to convert into a real web application.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Nexora</h2>
+    <br>
+    <p style="max-width:800px;margin:auto;">
+        Nexora is a next-generation ultra pro web app design powered with modern UI, advanced layout, and scalable structure to make it 100% real production-ready website.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <br>
+    <div class="contact" style="max-width:600px;margin:auto;">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn">Send Message</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Nexora | Ultra Pro Real App Website</p>
+</footer>
+
+</body>
+</html>
